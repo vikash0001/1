@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main_circle{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+    
+    
+}
+.circle
+{ 
+ width: 10vw;
+ height: 10vw;
+ background-color: rgb(0, 0, 0);
+ border-radius: 50%;
+ display: flex; 
+ justify-content: center;
+ align-items: center;  
+ animation: vikky 4s infinite;
+
+}
+li
+{
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    position: absolute;
+    list-style: none;
+    border-radius: 50%;
+    transition-duration: 2s; 
+    transform-origin: center;
+}
+.circle :nth-child(1)
+{
+   animation: vikky1 2s infinite alternate-reverse;
+}
+.circle :nth-child(2){ animation: vikky2 2s infinite alternate-reverse;}
+.circle :nth-child(3){ animation: vikky3 2s infinite alternate-reverse;}
+.circle :nth-child(4){ animation: vikky4 2s infinite alternate-reverse;}
+.circle :nth-child(5){ animation: vikky5 4s infinite alternate-reverse;}
+.circle :nth-child(6){ animation: vikky6 4s infinite alternate-reverse;}
+.circle :nth-child(7){animation: vikky7 4s infinite alternate-reverse;}
+.circle :nth-child(8){animation: vikky8 4s infinite alternate-reverse;}
+
+@keyframes vikky{
+    0%{
+        width: 0vw;
+        height: 0vw;
+        /* opacity: 0; */
+    }
+      50% {
+        width: 10vw;
+        height: 10vw;
+        /* opacity: 1; */
+        transform: rotateZ(180deg);
+    }
+    100% {
+        width: 100vw;
+        height: 100vw;
+        /* opacity: 0; */
+        transform: rotateZ(360deg);
+        
+    } 
+}
+@keyframes vikky1{
+    to{
+        transform: translateX(200px);
+    }
+}
+@keyframes vikky2{
+    to{
+        transform: translateX(-200px);
+    }
+}
+@keyframes vikky3{
+    to{
+        transform: translatey(-200px);
+    }
+}
+@keyframes vikky4{
+    to{
+        transform: translatey(200px);
+    }
+}
+@keyframes vikky5{
+    to{
+        transform: translatey(145px) translateX(145px)  
+    ;
+    }
+}
+@keyframes vikky6{
+    to{
+        transform: translatey(-145px) translateX(-145px)
+    ;
+    }
+}
+@keyframes vikky7{
+    to{
+        transform: translatey(-145px) translateX(145px)
+    ;
+    }
+}
+@keyframes vikky8{
+    to{
+        transform: translatey(145px) translateX(-145px)
+        ;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="main_circle">
+        <div class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+    </div>
+</body>
+</html>

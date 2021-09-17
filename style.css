@@ -10,6 +10,13 @@
 {
     overflow-x: hidden;
 }
+iframe{
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    z-index: 999;
+}
 body
 {
     overflow-x: hidden;
@@ -476,7 +483,7 @@ footer
     .nav-item li a
     {
         font-weight: 900;
-        font-size: 1.5rem;
+        font-size: 2rem !important;
     }
     .menu-toggler
     {

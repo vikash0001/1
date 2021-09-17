@@ -248,29 +248,8 @@
                 </div>
             </div>
         </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+    <iframe src="loading-page.html"></iframe>
     <script>
         var menu_slider = document.querySelector('.navbar ul');
         var toggler = document.querySelector('.menu-toggler');
@@ -278,6 +257,13 @@
             toggler.classList.toggle('menu-toggler-active')
             menu_slider.classList.toggle('ul-active')
         })
+    </script>
+    <script>
+        var web_wrap = document.querySelector('iframe');
+        document.querySelector('body').onload = function(){
+            web_wrap.style.display = 'none'
+        }
+        
     </script>
 </body>
 
