@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
     /* outline: solid red 1px; */
 }
+.website-wrapper
+{
+    overflow-x: hidden;
+}
 body
 {
     overflow-x: hidden;
@@ -28,7 +32,7 @@ body
 }
 
 .header-wrapper
-{   
+{
     background-color: black;
     z-index: 500;
 }
@@ -62,7 +66,9 @@ body
 {
     text-decoration: none;
     color: white;
-    text-transform: capitalize;
+    text-transform:uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 .menu-toggler
 {
@@ -70,7 +76,7 @@ body
  top: 10px;
  right: 10px;
  display: none;
- cursor:pointer;
+ cursor: pointer;
 }
  
 .line
@@ -215,7 +221,6 @@ body
     color: white;
     position: relative;
     margin:25px 0px;
-    cursor: pointer;
 }
 .card::before
 {
@@ -319,7 +324,7 @@ body
 }
 .service-btn
 {
-    width: 170px;
+    width: 172px;
     margin: 20px 4px;
 }
 .clients-wrapper
@@ -410,14 +415,13 @@ body
     margin-right: 50%;
     font-size: 1.5rem;
     font-weight: 600;
-    cursor: pointer;
 }
 footer
 {
     background-color: black;
 }
 .footer
-{   max-width: 100vw;
+{
     display: flex;
     justify-content: space-between;
 }
@@ -435,29 +439,31 @@ footer
 
 @media only screen and (max-width:766px) {
     header
-    {   width: 100%;
+    {
         position: fixed;
         left: 0;
+        right: 0;
         z-index: 50;
-        overflow-x: hidden;
     }
     .nav-item{
         position:fixed;
-        top:50px;
+        top:49px;
         left: 0;
+        right: 0;
         background-color: black;
-        width: 100%;
+        width: 100vw;
         height: 0px;
         flex-direction: column;
         z-index: 60;
         text-align:left;
         transition: all 0.35s;
-        overflow-y:scroll;
+        overflow:scroll;
     }
     .ul-active
     {
         height: 100%;
-        padding: 20px 0px;
+        padding: 30px 0px;
+        border-top: solid springgreen 1px;
     }
 
 
