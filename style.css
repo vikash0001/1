@@ -379,7 +379,7 @@ body
 .contact-right
 {   width: 56%;
     min-width: 300px;
-    background-color: rgba(0, 0, 0, 0.481);
+    background-color: rgba(0, 0, 0, 0.281);
     border-radius: 5px;
     padding: 2vw 4vw;
 }
@@ -406,7 +406,7 @@ body
     border-radius: 3px;
     padding:0px 10px;
     outline: none;
-    background-color: rgba(0, 0, 0, 0.529);
+    background-color: rgba(0, 0, 0, 0.729);
     color: white;
 }
 #send
